@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="start smoke testing">
+
+    <parameter name="useCloudEnv" value="false"></parameter>
+    <parameter name="envName" value="browserstack"></parameter>
+    <parameter name="os" value="windows"></parameter>
+    <parameter name="osVersion" value="11"></parameter>
+    <parameter name="browserName" value="chrome"></parameter>
+    <parameter name="browserVersion" value="99"></parameter>
+    <parameter name="url" value="https://www.statefarm.com/"></parameter>
+
+
+<!--    <test name="logInTest">-->
+<!--        <classes>-->
+<!--            <class name="homepagepackagetest.AccountPageTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="search stat farm">-->
+<!--        <classes>-->
+<!--            <class name="homepagepackagetest.SearchTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+    <test name="goPaperLess">
+        <classes>
+            <class name="homepagepackagetest.GoPaperLessTest"></class>
+        </classes>
+    </test>
+<!--    <test name="getQuotes">-->
+<!--        <classes>-->
+<!--            <class name="homepagepackagetest.QuoteBillPaymentTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="openBankAccount">-->
+<!--        <classes>-->
+<!--            <class name="homepagepackagetest.OpenBankAccountTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="getInsurance">-->
+<!--        <classes>-->
+<!--            <class name="homepagepackagetest.InsurancePageTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="accessDocMess">-->
+<!--        <classes>-->
+<!--            <class name="homepagepackagetest.AccessDocMessTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>
